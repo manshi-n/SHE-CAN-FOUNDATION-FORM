@@ -152,21 +152,7 @@ All volunteer/contact form submissions are stored in MongoDB Atlas and can be vi
 
 ---
 
-## Internship Task Enhancements
 
-The original task required only a simple form submission page.
-
-Additional features implemented:
-
-* MongoDB Atlas Integration
-* Express Backend APIs
-* JWT Authentication
-* Admin Dashboard
-* Submission Management
-* Message Deletion
-* Form Validation
-* Responsive UI
-* Dark Mode Support
 
 ---
 
