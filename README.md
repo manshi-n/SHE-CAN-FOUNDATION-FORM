@@ -117,7 +117,7 @@ JWT_SECRET=YOUR_SECRET_KEY
 
 ADMIN_EMAIL=youradmin@gmail.com
 
-ADMIN_PASSWORD=your_admin_password
+ADMIN_PASSWORD=Admin@12345
 ```
 
 ### 4. Run Application
