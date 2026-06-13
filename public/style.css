@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --bg: #fff7fb;
+  --text: #222;
+  --card: #ffffff;
+  --primary: #d63384;
+  --secondary: #f8d7e8;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body.dark {
+  --bg: #161116;
+  --text: #f7f7f7;
+  --card: #241b24;
+  --primary: #ff77b7;
+  --secondary: #352535;
+  --shadow: rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: var(--card);
+  box-shadow: 0 2px 12px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h2 {
+  color: var(--primary);
+}
+
+.navbar button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px 8%;
+  gap: 35px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.hero-card img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px var(--shadow);
+}
+
+/* Admin Dashboard Card */
+.admin-showcase {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.admin-card {
+  width: 84%;
+  max-width: 720px;
+  background: var(--card);
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px var(--shadow);
+  animation: floatCard 3s ease-in-out infinite;
+}
+
+.admin-card h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.admin-card p {
+  margin-bottom: 22px;
+  font-size: 16px;
+}
+
+.admin-panel-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.admin-panel-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@keyframes floatCard {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about,
+.contact-section {
+  margin: 30px auto;
+  padding: 35px;
+  width: 84%;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 5px 18px var(--shadow);
+}
+
+.about h2,
+.contact-section h2 {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+input,
+textarea {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  padding: 13px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+#responseMsg {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--card);
+  margin-top: 40px;
+}
+
+.admin-box {
+  width: min(500px, 90%);
+  margin: 60px auto;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 15px;
+  box-shadow: 0 5px 18px var(--shadow);
+}
+
+.message-card {
+  background: var(--secondary);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.message-card button {
+  margin-top: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 31px;
+  }
+
+  .about,
+  .contact-section,
+  .admin-card {
+    width: 92%;
+    padding: 24px;
+  }
+
+  .navbar {
+    padding: 15px 5%;
+  }
+}

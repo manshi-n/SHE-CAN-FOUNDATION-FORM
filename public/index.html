@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h2>She Can Foundation</h2>
+
+    <div class="nav-buttons">
+      <button id="themeToggle" type="button">Dark Mode</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Empowering Women. Creating Opportunities.</h1>
+
+      <p>
+        She Can Foundation works towards education, awareness,
+        digital initiatives, and community-driven programs
+        for positive social impact.
+      </p>
+
+      <a href="#contact" class="primary-btn">Join Us</a>
+    </div>
+
+    <div class="hero-card">
+      <img
+        src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80"
+        alt="Community Support"
+      />
+    </div>
+  </section>
+
+  <section class="admin-showcase">
+    <div class="admin-card">
+      <h2>🔐 Admin Dashboard</h2>
+
+      <p>
+        Securely manage volunteer submissions, monitor messages,
+        and access organization data through the admin panel.
+      </p>
+
+      <a href="admin.html" class="admin-panel-btn">Open Admin Panel</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+
+    <p>
+      We believe every student and every woman deserves access
+      to learning, confidence, and opportunities. Through education,
+      awareness programs, digital initiatives, and community support,
+      we aim to create a more inclusive and empowered society.
+    </p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact / Volunteer Form</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="responseMsg"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 She Can Foundation</p>
+    <p>
+      Built with HTML, CSS, JavaScript, Node.js, Express.js and MongoDB
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
